@@ -1,0 +1,32 @@
+<head>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  
+  <div class="container">
+    <div id="hourglass">
+      <div class="pomo-timer"></div>
+    </div>
+    <div class="pomo-sections">
+      <div id="pomo-session">Session 1</div>
+      <div id="pomo-time">
+        <div id="session-time" class="pom-time">
+          <span id = "sTime">session time</span>
+          <div id="session-set-time"></div>
+          <button id = "reduce-session-time" class="btn" onclick="decrSessionTime()">-</button>
+          <button id = "increase-session-time" class="btn" onclick = "incrSessionTime()">+</button>
+        </div>
+        <div id="break-time" class="pom-time">
+          <span id = "bTime">break time</span>
+          <div id="break-set-time"></div>
+          <button id = "reduce-break-time" class="btn" onclick="decrBreakTime()">-</button>
+          <button id = "increase-break-time" class="btn" onclick = "incrBreakTime()">+</button>
+        </div>
+      </div>
+      <div id="pause-reset">
+        <button id = "start" class = "btn2" onclick = "startTimer()">Start</button>
+        <button id = "reset" class = "btn2" onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./index.js"></script>
